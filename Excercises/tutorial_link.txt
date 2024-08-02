@@ -1,0 +1,5 @@
+// Neuroscience tutorial website on github //
+https://mrgreene09.github.io/computational-neuroscience-textbook/Ch5.html
+
+This neuroscience tutorial explains a lot on general coding of neuroscience problems.
+It is a good reference for the future.

@@ -1,0 +1,56 @@
+{
+    "data_paths": {
+        "Exp01": "../data/Data01_Baseline_Sanjay2015",
+        "Exp02": "../data/Data02_Baseline",
+        "Exp03": "../data/Data03_Model_Validation",
+        "Exp04": "../data/Data04_NA_K_variants",
+        "Exp05": "../data/Data05_External_noise",
+        "Exp06": "../data/Data06_Recurrent_connections"
+    },
+    "Experiment_parameters": {
+        "Sodium_conductances": {
+            "gNa": 1.00,
+            "Step_values": {
+                "start": 0.50,
+                "end": 1.50,
+                "step": 0.10
+            }
+        },
+        "Potassium_conductances": {
+            "gK": 1.00,
+            "Step_values": {
+                "start": 0.50,
+                "end": 1.50,
+                "step": 0.10
+            }
+        },
+        "Pyr_OLM_connections": 0.10,
+        "Bwb_Bwb_connections": [
+            1.00, 1.05, 1.10, 1.15, 1.20
+        ],
+        "External_noise": {
+            "pyr_noise": 1.00,
+            "pyr_noise_scale": 20.00,
+            "Step_values": [
+                0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00, 1.10, 1.20, 1.30
+            ]
+        },
+        "Trial_number": {
+            "Exp01": 10,
+            "Exp02": 50,
+            "Exp03": 10,
+            "Exp04": 20,
+            "Exp05": 15,
+            "Exp06": 15
+        },
+        "Changed_connections": {
+            "OLM->Pyr GABA": "olm_to_pyr_weight",
+            "OLM->Pyr GABA2": "olm_to_pyr_weight",
+            "BWB->BWB GABA": "bwb_to_bwb_weight"
+        },
+        "Changed_noise": {
+            "Pyr_2_Adend3AMPAf": "pyr_noise_scale",
+            "Pyr_5_Adend3NMDA": "pyr_noise_scale"
+        }
+    }
+}
